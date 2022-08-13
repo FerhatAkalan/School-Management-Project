@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Personel.master.cs" Inherits="OkulOtomasyonu.Personel" %>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="LoginDosyası\assets\images\ico-01.png" type="image/x-icon" />
+
+    <title>Okul Bilgi Sistemi</title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="Sidebar/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="Sidebar/StyleSheet4.css" rel="stylesheet" />
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        .auto-style1 {
+            color: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3><a href="PersonelDefault.aspx">Personel Menüsü</a></h3>
+                    <strong><a href="PersonelDefault.aspx">PM</a></strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="PersonelProfil.aspx">
+                            <i class="glyphicon glyphicon-user"></i>
+                            Profil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PersonelOgrenciListesi.aspx">
+                            <i class="glyphicon glyphicon-list"></i>
+                            Öğrenci Listesi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PersonelOgrenciEkle.aspx">
+                            <i class="glyphicon glyphicon-copy"></i>
+                            Öğrenci Ekle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PersonelDanismanListesi.aspx">
+                            <i class="glyphicon glyphicon-book"></i>
+                            Danışman Listesi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PersonelDanismanEkle.aspx">
+                            <i class="glyphicon glyphicon-paste"></i>
+                            Danışman Ekle
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PersonelDersListesi.aspx">
+                            <i class="glyphicon glyphicon-book"></i>
+                            Ders Listesi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="PersonelDersEkle.aspx">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            Ders Ekle
+                        </a>
+                    </li>
+                    <li>
+                        <a href="PersonelGrafikler.aspx">
+                            <i class="glyphicon glyphicon-list"></i>
+                            Grafikler
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="list-unstyled CTAs">
+                    <asp:Button ID="Button1" runat="server" Text="Çıkış" class="glyphicon glyphicon-log-out btn btn-danger" OnClick="Button1_Click" />
+                </ul>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                            <span>Menü</span>
+                        </button>
+                        <asp:Label ID="Label3" runat="server" Text="" ></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="" ></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text="" Font-Bold="true"></asp:Label>
+                    </div>
+                </nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <div id="footer" class="footer">
+            <p class="auto-style1">Coded by Ferhat Akalan</p>
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="Sidebar/jquery-1.12.0.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="Sidebar/js-bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </form>
+</body>
+
+</html>

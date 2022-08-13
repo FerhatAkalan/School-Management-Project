@@ -1,0 +1,868 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B6EA14B-4A71-41E6-945B-A50418BE40ED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OkulOtomasyonu</RootNamespace>
+    <AssemblyName>OkulOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44369</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DanismanDefault.aspx" />
+    <Content Include="DanismanOgrenciDersKayitliListesi.aspx" />
+    <Content Include="DanismanOgrenciDevamsizlikEkle.aspx" />
+    <Content Include="DanismanOgrenciDevamsizlikListesi.aspx" />
+    <Content Include="DanismanGrafikler.aspx" />
+    <Content Include="DanismanNotListesi.aspx" />
+    <Content Include="DanismanOgrenciDersKaydet.aspx" />
+    <Content Include="DanismanOgrenciDersListesi.aspx" />
+    <Content Include="DanismanOgrenciDevamsizlikGoruntule.aspx" />
+    <Content Include="DanismanOgrenciDevamsizlikGuncelle.aspx" />
+    <Content Include="DanismanOgrenciListesi.aspx" />
+    <Content Include="DanismanOgrenciNotEkle.aspx" />
+    <Content Include="DanismanOgrenciNotGirisi.aspx" />
+    <Content Include="DanismanOgrenciNotGoruntule.aspx" />
+    <Content Include="DanismanOgrenciNotGuncelle.aspx" />
+    <Content Include="DanismanProfil.aspx" />
+    <Content Include="LoginDosyası\assets\images\ico-01.png" />
+    <Content Include="OgrenciDersListesi.aspx" />
+    <Content Include="OgrenciDevamsizlikBilgisi.aspx" />
+    <Content Include="OgrenciGrafikler.aspx" />
+    <Content Include="OgrenciNotListesi.aspx" />
+    <Content Include="OgrenciProfil.aspx" />
+    <Content Include="PersonelDanismanEkle.aspx" />
+    <Content Include="PersonelDanismanGuncelle.aspx" />
+    <Content Include="PersonelDanismanListesi.aspx" />
+    <Content Include="PersonelDanismanOgrenciListesi.aspx" />
+    <Content Include="PersonelDanismanSil.aspx" />
+    <Content Include="PersonelDersEkle.aspx" />
+    <Content Include="PersonelDersGuncelle.aspx" />
+    <Content Include="PersonelDersListesi.aspx" />
+    <Content Include="PersonelGrafikler.aspx" />
+    <Content Include="PersonelOgrenciEkle.aspx" />
+    <Content Include="PersonelOgrenciListesi.aspx" />
+    <Content Include="PersonelOgrenciSil.aspx" />
+    <Content Include="Sidebar\bootstrap-3.3.7\.gitattributes" />
+    <Content Include="Sidebar\bootstrap-3.3.7\.gitignore" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap.min.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\js\bootstrap.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\js\bootstrap.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\js\npm.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\about.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\apple-touch-icon.png" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\brand\bootstrap-outline.svg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\brand\bootstrap-punchout.svg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\brand\bootstrap-solid.svg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\css\docs.min.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\css\src\docs.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\css\src\pygments-manni.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\flash\ZeroClipboard.swf" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\components.png" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\devices.png" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\expo-lyft.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\expo-newsweek.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\expo-riot.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\expo-vogue.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\img\sass-less.png" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\customize.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\docs.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\raw-files.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\src\application.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\src\customizer.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\anchor.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\autoprefixer.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\Blob.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\FileSaver.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\holder.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\jquery.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\jszip.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\less.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\uglify.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\browser-bugs.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\components.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\css.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\customize.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap.min.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\js\bootstrap.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\js\bootstrap.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\js\npm.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\blog\blog.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\blog\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\carousel\carousel.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\carousel\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\cover\cover.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\cover\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\dashboard\dashboard.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\dashboard\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\grid\grid.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\grid\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\jumbotron-narrow\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\jumbotron-narrow\jumbotron-narrow.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\jumbotron\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\jumbotron\jumbotron.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\justified-nav\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\justified-nav\justified-nav.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\navbar-fixed-top\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\navbar-fixed-top\navbar-fixed-top.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\navbar-static-top\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\navbar-static-top\navbar-static-top.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\navbar\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\navbar\navbar.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\non-responsive\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\non-responsive\non-responsive.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\offcanvas\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\offcanvas\offcanvas.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\offcanvas\offcanvas.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\blog.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\carousel.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\cover.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\dashboard.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\equal-height-columns.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\grid.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\jumbotron-narrow.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\jumbotron.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\justified-nav.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\navbar-fixed.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\navbar-static.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\navbar.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\non-responsive.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\offcanvas.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\sign-in.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\starter-template.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\sticky-footer-navbar.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\sticky-footer.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\screenshots\theme.jpg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\signin\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\signin\signin.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\starter-template\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\starter-template\starter-template.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\sticky-footer-navbar\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\sticky-footer-navbar\sticky-footer-navbar.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\sticky-footer\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\sticky-footer\sticky-footer.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\theme\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\theme\theme.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\tooltip-viewport\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\tooltip-viewport\tooltip-viewport.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\examples\tooltip-viewport\tooltip-viewport.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\favicon.ico" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\getting-started.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\javascript.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\migration.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\robots.txt" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\ads.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\alerts.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\badges.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\breadcrumbs.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\button-dropdowns.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\button-groups.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\dropdowns.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\glyphicons.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\input-groups.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\jumbotron.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\labels.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\list-group.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\media.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\navbar.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\navs.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\page-header.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\pagination.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\panels.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\progress-bars.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\responsive-embed.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\thumbnails.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\components\wells.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\buttons.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\code.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\forms.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\grid.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\helpers.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\images.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\less.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\overview.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\responsive-utilities.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\sass.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\tables.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\css\type.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\customizer-variables.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\footer.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\accessibility.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\browser-device-support.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\community.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\disabling-responsiveness.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\download.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\examples.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\grunt.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\license.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\template.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\third-party-support.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\tools.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\translations.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\getting-started\whats-included.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\header.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\affix.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\alerts.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\buttons.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\carousel.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\collapse.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\dropdowns.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\modal.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\overview.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\popovers.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\scrollspy.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\tabs.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\tooltips.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\js\transitions.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\about.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\components.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\css.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\customize.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\getting-started.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\javascript.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\main.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_includes\nav\migration.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_layouts\default.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_layouts\home.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Sidebar\bootstrap-3.3.7\Gruntfile.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\bs-commonjs-generator.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\bs-lessdoc-parser.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\bs-raw-files-generator.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\change-version.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\affix.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\alert.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\button.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\carousel.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\collapse.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\dropdown.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\modal.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\popover.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\scrollspy.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tab.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\index.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\affix.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\alert.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\button.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\carousel.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\collapse.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\dropdown.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\modal.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\phantom.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\popover.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\scrollspy.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\tab.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\tooltip.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\vendor\jquery.min.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\vendor\qunit.css" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\vendor\qunit.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\affix-with-sticky-footer.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\affix.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\alert.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\button.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\carousel.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\collapse.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\dropdown.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\modal.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\popover.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\scrollspy.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\tab.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\visual\tooltip.html" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tooltip.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\transition.js" />
+    <Content Include="Sidebar\bootstrap-3.3.7\package.js" />
+    <Content Include="Sidebar\bootstrap.min.css" />
+    <Content Include="Sidebar\jquery-1.12.0.min.js" />
+    <Content Include="Sidebar\js-bootstrap.min.js" />
+    <Content Include="PersonelOgrenciGuncelle.aspx" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\index.html" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\index2.html" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\index3.html" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\index4.html" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\index5.html" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\style.css" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\style2.css" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\style3.css" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\style4.css" />
+    <Content Include="Sidebar\sidebar\bootstrap-3\style5.css" />
+    <Content Include="Sidebar\sidebar\index.html" />
+    <Content Include="Sidebar\sidebar\index2.html" />
+    <Content Include="Sidebar\sidebar\index3.html" />
+    <Content Include="Sidebar\sidebar\index4.html" />
+    <Content Include="Sidebar\sidebar\index5.html" />
+    <Content Include="Sidebar\sidebar\style.css" />
+    <Content Include="Sidebar\sidebar\style2.css" />
+    <Content Include="Sidebar\sidebar\style3.css" />
+    <Content Include="Sidebar\sidebar\style4.css" />
+    <Content Include="Sidebar\sidebar\style5.css" />
+    <Content Include="Sidebar\StyleSheet4.css" />
+    <Content Include="Sidebar\StyleSheet2.css" />
+    <Content Include="OgrenciDefault.aspx" />
+    <Content Include="PersonelProfil.aspx" />
+    <Content Include="LoginDosyası\assets\css\bootstrap.css" />
+    <Content Include="LoginDosyası\assets\css\bootstrap.min.css" />
+    <Content Include="LoginDosyası\assets\css\font-awesome.min.css" />
+    <Content Include="LoginDosyası\assets\css\owl.carousel.min.css" />
+    <Content Include="LoginDosyası\assets\css\owl.theme.default.min.css" />
+    <Content Include="LoginDosyası\assets\css\style.css" />
+    <Content Include="LoginDosyası\assets\fonts\et-line.svg" />
+    <Content Include="LoginDosyası\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="LoginDosyası\assets\fonts\icomoon.svg" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-bold-webfont.svg" />
+    <Content Include="LoginDosyası\assets\fonts\robotocondensed-regular-webfont.svg" />
+    <Content Include="LoginDosyası\assets\images\bg-01.jpg" />
+    <Content Include="LoginDosyası\assets\images\vector.png" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.bundle.js" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.bundle.min.js" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.esm.js" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.esm.min.js" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.js" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.min.js" />
+    <Content Include="LoginDosyası\assets\js\jquery.min.js" />
+    <Content Include="LoginDosyası\assets\js\owl.carousel.min.js" />
+    <Content Include="LoginDosyası\index.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="PersonelDefault.aspx" />
+    <Content Include="Sidebar\StyleSheet1.css" />
+    <Content Include="Sidebar\StyleSheet3.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Danisman.Master.cs">
+      <DependentUpon>Danisman.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Danisman.Master.designer.cs">
+      <DependentUpon>Danisman.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanDefault.aspx.cs">
+      <DependentUpon>DanismanDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanDefault.aspx.designer.cs">
+      <DependentUpon>DanismanDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDersKayitliListesi.aspx.cs">
+      <DependentUpon>DanismanOgrenciDersKayitliListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDersKayitliListesi.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDersKayitliListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikEkle.aspx.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikEkle.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikListesi.aspx.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikListesi.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanGrafikler.aspx.cs">
+      <DependentUpon>DanismanGrafikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanGrafikler.aspx.designer.cs">
+      <DependentUpon>DanismanGrafikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanNotListesi.aspx.cs">
+      <DependentUpon>DanismanNotListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanNotListesi.aspx.designer.cs">
+      <DependentUpon>DanismanNotListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDersKaydet.aspx.cs">
+      <DependentUpon>DanismanOgrenciDersKaydet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDersKaydet.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDersKaydet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDersListesi.aspx.cs">
+      <DependentUpon>DanismanOgrenciDersListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDersListesi.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDersListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikGoruntule.aspx.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikGoruntule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikGoruntule.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikGoruntule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikGuncelle.aspx.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciDevamsizlikGuncelle.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciDevamsizlikGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciListesi.aspx.cs">
+      <DependentUpon>DanismanOgrenciListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciListesi.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotEkle.aspx.cs">
+      <DependentUpon>DanismanOgrenciNotEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotEkle.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciNotEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotGirisi.aspx.cs">
+      <DependentUpon>DanismanOgrenciNotGirisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotGirisi.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciNotGirisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotGoruntule.aspx.cs">
+      <DependentUpon>DanismanOgrenciNotGoruntule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotGoruntule.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciNotGoruntule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotGuncelle.aspx.cs">
+      <DependentUpon>DanismanOgrenciNotGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanOgrenciNotGuncelle.aspx.designer.cs">
+      <DependentUpon>DanismanOgrenciNotGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanismanProfil.aspx.cs">
+      <DependentUpon>DanismanProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanismanProfil.aspx.designer.cs">
+      <DependentUpon>DanismanProfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci.Master.cs">
+      <DependentUpon>Ogrenci.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ogrenci.Master.designer.cs">
+      <DependentUpon>Ogrenci.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDefault.aspx.cs">
+      <DependentUpon>OgrenciDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciDefault.aspx.designer.cs">
+      <DependentUpon>OgrenciDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDersListesi.aspx.cs">
+      <DependentUpon>OgrenciDersListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciDersListesi.aspx.designer.cs">
+      <DependentUpon>OgrenciDersListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDevamsizlikBilgisi.aspx.cs">
+      <DependentUpon>OgrenciDevamsizlikBilgisi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciDevamsizlikBilgisi.aspx.designer.cs">
+      <DependentUpon>OgrenciDevamsizlikBilgisi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGrafikler.aspx.cs">
+      <DependentUpon>OgrenciGrafikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGrafikler.aspx.designer.cs">
+      <DependentUpon>OgrenciGrafikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciNotListesi.aspx.cs">
+      <DependentUpon>OgrenciNotListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciNotListesi.aspx.designer.cs">
+      <DependentUpon>OgrenciNotListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciProfil.aspx.cs">
+      <DependentUpon>OgrenciProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciProfil.aspx.designer.cs">
+      <DependentUpon>OgrenciProfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.Master.cs">
+      <DependentUpon>Personel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personel.Master.designer.cs">
+      <DependentUpon>Personel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDanismanEkle.aspx.cs">
+      <DependentUpon>PersonelDanismanEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDanismanEkle.aspx.designer.cs">
+      <DependentUpon>PersonelDanismanEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDanismanGuncelle.aspx.cs">
+      <DependentUpon>PersonelDanismanGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDanismanGuncelle.aspx.designer.cs">
+      <DependentUpon>PersonelDanismanGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDanismanListesi.aspx.cs">
+      <DependentUpon>PersonelDanismanListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDanismanListesi.aspx.designer.cs">
+      <DependentUpon>PersonelDanismanListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDanismanOgrenciListesi.aspx.cs">
+      <DependentUpon>PersonelDanismanOgrenciListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDanismanOgrenciListesi.aspx.designer.cs">
+      <DependentUpon>PersonelDanismanOgrenciListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDanismanSil.aspx.cs">
+      <DependentUpon>PersonelDanismanSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDanismanSil.aspx.designer.cs">
+      <DependentUpon>PersonelDanismanSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDefault.aspx.cs">
+      <DependentUpon>PersonelDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDefault.aspx.designer.cs">
+      <DependentUpon>PersonelDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDersEkle.aspx.cs">
+      <DependentUpon>PersonelDersEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDersEkle.aspx.designer.cs">
+      <DependentUpon>PersonelDersEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDersGuncelle.aspx.cs">
+      <DependentUpon>PersonelDersGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDersGuncelle.aspx.designer.cs">
+      <DependentUpon>PersonelDersGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelDersListesi.aspx.cs">
+      <DependentUpon>PersonelDersListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelDersListesi.aspx.designer.cs">
+      <DependentUpon>PersonelDersListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGrafikler.aspx.cs">
+      <DependentUpon>PersonelGrafikler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelGrafikler.aspx.designer.cs">
+      <DependentUpon>PersonelGrafikler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelOgrenciEkle.aspx.cs">
+      <DependentUpon>PersonelOgrenciEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelOgrenciEkle.aspx.designer.cs">
+      <DependentUpon>PersonelOgrenciEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelOgrenciListesi.aspx.cs">
+      <DependentUpon>PersonelOgrenciListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelOgrenciListesi.aspx.designer.cs">
+      <DependentUpon>PersonelOgrenciListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelOgrenciSil.aspx.cs">
+      <DependentUpon>PersonelOgrenciSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelOgrenciSil.aspx.designer.cs">
+      <DependentUpon>PersonelOgrenciSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelProfil.aspx.cs">
+      <DependentUpon>PersonelProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelProfil.aspx.designer.cs">
+      <DependentUpon>PersonelProfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PersonelOgrenciGuncelle.aspx.cs">
+      <DependentUpon>PersonelOgrenciGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonelOgrenciGuncelle.aspx.designer.cs">
+      <DependentUpon>PersonelOgrenciGuncelle.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoginDosyası\assets\fonts\et-line.eot" />
+    <Content Include="LoginDosyası\assets\fonts\et-line.ttf" />
+    <Content Include="LoginDosyası\assets\fonts\et-line.woff" />
+    <Content Include="LoginDosyası\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="LoginDosyası\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="LoginDosyası\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="LoginDosyası\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="LoginDosyası\assets\fonts\FontAwesome.otf" />
+    <Content Include="LoginDosyası\assets\fonts\icomoon.eot" />
+    <Content Include="LoginDosyası\assets\fonts\icomoon.ttf" />
+    <Content Include="LoginDosyası\assets\fonts\icomoon.woff" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-bold-webfont.eot" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-bold-webfont.ttf" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-bold-webfont.woff" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-bold-webfont.woff2" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-light-webfont.woff" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-light-webfont.woff2" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-regular-webfont.woff" />
+    <Content Include="LoginDosyası\assets\fonts\roboto-regular-webfont.woff2" />
+    <Content Include="LoginDosyası\assets\fonts\robotocondensed-regular-webfont.eot" />
+    <Content Include="LoginDosyası\assets\fonts\robotocondensed-regular-webfont.ttf" />
+    <Content Include="LoginDosyası\assets\fonts\robotocondensed-regular-webfont.woff" />
+    <Content Include="LoginDosyası\assets\fonts\robotocondensed-regular-webfont.woff2" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.bundle.js.map" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.bundle.min.js.map" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.esm.js.map" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.esm.min.js.map" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.js.map" />
+    <Content Include="LoginDosyası\assets\js\bootstrap.min.js.map" />
+    <Content Include="Danisman.Master" />
+    <Content Include="Ogrenci.Master" />
+    <Content Include="Sidebar\bootstrap-3.3.7\.editorconfig" />
+    <Content Include="Sidebar\bootstrap-3.3.7\.hound.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\.travis.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\bower.json" />
+    <Content Include="Sidebar\bootstrap-3.3.7\CHANGELOG.md" />
+    <Content Include="Sidebar\bootstrap-3.3.7\CNAME" />
+    <Content Include="Sidebar\bootstrap-3.3.7\composer.json" />
+    <Content Include="Sidebar\bootstrap-3.3.7\CONTRIBUTING.md" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\css\bootstrap.min.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Sidebar\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\assets\css\docs.min.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\css\bootstrap.min.css.map" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\LICENSE" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\browser-bugs.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\browser-features.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\core-team.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\glyphicons.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\sass-team.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\showcase.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_data\translations.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_plugins\bridge.rb" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_plugins\bugify.rb" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_pug\customizer-nav.pug" />
+    <Content Include="Sidebar\bootstrap-3.3.7\docs\_pug\customizer-variables.pug" />
+    <Content Include="Sidebar\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Sidebar\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Sidebar\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Sidebar\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Sidebar\bootstrap-3.3.7\Gemfile" />
+    <Content Include="Sidebar\bootstrap-3.3.7\Gemfile.lock" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\.jshintrc" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\configBridge.json" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\npm-shrinkwrap.json" />
+    <Content Include="Sidebar\bootstrap-3.3.7\grunt\sauce_browsers.yml" />
+    <Content Include="Sidebar\bootstrap-3.3.7\ISSUE_TEMPLATE.md" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\.jscsrc" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\.jshintrc" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\README.md" />
+    <Content Include="Sidebar\bootstrap-3.3.7\js\tests\unit\.jshintrc" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\.csscomb.json" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\.csslintrc" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\alerts.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\badges.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\bootstrap.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\breadcrumbs.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\button-groups.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\buttons.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\carousel.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\close.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\code.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\component-animations.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\dropdowns.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\forms.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\glyphicons.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\grid.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\input-groups.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\jumbotron.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\labels.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\list-group.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\media.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\mixins.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\modals.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\navbar.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\navs.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\normalize.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\pager.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\pagination.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\panels.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\popovers.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\print.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\progress-bars.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\responsive-embed.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\responsive-utilities.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\scaffolding.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\tables.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\theme.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\thumbnails.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\less\tooltip.less" />
+    <Content Include="Sidebar\bootstrap-3.3.7\LICENSE" />
+    <Content Include="Sidebar\bootstrap-3.3.7\package.json" />
+    <Content Include="Sidebar\bootstrap-3.3.7\README.md" />
+    <Content Include="Sidebar\bootstrap-3.3.7\_config.yml" />
+    <None Include="packages.config" />
+    <Content Include="Personel.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54129</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44369/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
