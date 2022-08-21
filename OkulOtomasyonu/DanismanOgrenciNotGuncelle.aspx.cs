@@ -79,7 +79,7 @@ namespace OkulOtomasyonu
                 transaction1.Commit();
 
                 Label1.Text = "Kayıt Başarıyla Güncellendi. Öğrenci Listesi Sayfasına Yönlendiriliyorsunuz...";       
-                Response.AppendHeader("Refresh", "3;url=DanismanOgrenciNotGoruntule.aspx?OgrenciNo=" + TextOgrNo.Text);
+                Response.AppendHeader("Refresh", "1;url=DanismanOgrenciNotGoruntule.aspx?OgrenciNo=" + TextOgrNo.Text);
 
 
             }

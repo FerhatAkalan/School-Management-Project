@@ -25,7 +25,7 @@ namespace OkulOtomasyonu
                 {
                     TextOgrId.Text = Request.QueryString["OgrenciID"];
                     TextOgrNo.Text = Request.QueryString["OgrenciNo"];
-                    TextDevTarih.Text = DateTime.Now.Date.ToString();
+                    TextDevTarih.Text = DateTime.Now.Date.ToString("yyyy-MM-dd");
                 }
             }
         }
