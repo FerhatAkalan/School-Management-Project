@@ -2,6 +2,7 @@
 Asp.net ile okul otomasyonu projesi.
 
 Giriş Ekranı
+
 ![Giriş Ekranı](https://user-images.githubusercontent.com/102834897/188285816-da21d1fc-4a62-4554-a541-896dee08720d.png)
 
 ![PersonelDefault](https://user-images.githubusercontent.com/102834897/189881844-e71008ac-9a1e-43cc-a52e-54a55a49b90e.png)
