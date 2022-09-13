@@ -2,10 +2,11 @@
 **Asp.net ile okul otomasyonu projesi.**
 + Herhangi bir okulun öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar.<br>
 
-+ [Giriş Ekranı](#Giriş-Ekranı)
-+ [Personel Ekranı](#Personel-Ekranı)
-+ [Danışman Ekranı](#Danışman-Ekranı)
-+ [Öğrenci Ekranı](#Öğrenci-Ekranı)
+* Proje Görselleri:
+  * [Giriş Ekranı](#Giriş-Ekranı)
+  * [Personel Ekranı](#Personel-Ekranı)
+  * [Danışman Ekranı](#Danışman-Ekranı)
+  * [Öğrenci Ekranı](#Öğrenci-Ekranı)
 
 <a name="Giriş-Ekranı"></a>
 ## Giriş Ekranı
