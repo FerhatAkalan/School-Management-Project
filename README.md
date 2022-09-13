@@ -1,11 +1,19 @@
 # OkulOtomasyonu
 **Asp.net ile okul otomasyonu projesi.**
-+ Herhangi bir okulun öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar
++ Herhangi bir okulun öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar.<br>
+
++ [Giriş Ekranı](#Giriş-Ekranı)
++ [Personel Ekranı](#Personel-Ekranı)
++ [Danışman Ekranı](#Danışman-Ekranı)
++ [Öğrenci Ekranı](#Öğrenci-Ekranı)
+
+<a name="Giriş-Ekranı"></a>
 ## Giriş Ekranı
 
 ![Giriş Ekranı](https://user-images.githubusercontent.com/102834897/188285816-da21d1fc-4a62-4554-a541-896dee08720d.png)
 ---
 
+<a name="Personel-Ekranı"></a>
 ## Personel Ekranı
 
 ![PersonelDefault](https://user-images.githubusercontent.com/102834897/189881844-e71008ac-9a1e-43cc-a52e-54a55a49b90e.png)
@@ -19,6 +27,7 @@
 ![PersonelGrafikler](https://user-images.githubusercontent.com/102834897/189882033-c598040f-78aa-45a0-bbb9-2cbc77068cfc.png)
 ---
 
+<a name="Danışman-Ekranı"></a>
 ## Danışman Ekranı
 
 ![DanışmanDefault](https://user-images.githubusercontent.com/102834897/189882067-f5c4580b-90a4-4219-83fd-b06bf57433a0.png)
@@ -30,6 +39,7 @@
 ![DanışmanGrafikler](https://user-images.githubusercontent.com/102834897/189882837-b39b6701-b7d6-44bb-a89e-a107789727be.png)
 ---
 
+<a name="Öğrenci-Ekranı"></a>
 ## Öğrenci Ekranı
 
 ![OgrenciDefault](https://user-images.githubusercontent.com/102834897/189882866-f762cb92-694b-46ac-a5bd-27c1135aa846.png)
