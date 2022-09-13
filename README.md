@@ -1,6 +1,6 @@
 # OkulOtomasyonu
 **Asp.net ile okul otomasyonu projesi.**
-
++ Herhangi bir okulun öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar
 ## Giriş Ekranı
 
 ![Giriş Ekranı](https://user-images.githubusercontent.com/102834897/188285816-da21d1fc-4a62-4554-a541-896dee08720d.png)
