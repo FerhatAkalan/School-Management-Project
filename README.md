@@ -1,4 +1,4 @@
-# OkulOtomasyonu
+# Okul Otomasyonu
 **Asp.net ile okul otomasyonu projesi.**
 + Herhangi bir okulun öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar.<br>
 
