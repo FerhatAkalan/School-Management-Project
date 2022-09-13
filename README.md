@@ -1,7 +1,7 @@
 # Okul Otomasyonu
 **Asp.net ile okul otomasyonu projesi.**
 + Herhangi bir okulun öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar.<br>
-+ ASP.NET, Bootstrap ve Microsoft SQL Express kullanılmıştır.
++ ASP.NET, Bootstrap ve Microsoft SQL Express kullanılarak yazıldı.
 
 * Proje Görselleri:
   * [Giriş Ekranı](#Giriş-Ekranı)
