@@ -5,6 +5,8 @@ Giriş Ekranı
 
 ![Giriş Ekranı](https://user-images.githubusercontent.com/102834897/188285816-da21d1fc-4a62-4554-a541-896dee08720d.png)
 
+Personel Ekranı
+
 ![PersonelDefault](https://user-images.githubusercontent.com/102834897/189881844-e71008ac-9a1e-43cc-a52e-54a55a49b90e.png)
 ![PersonelProfil](https://user-images.githubusercontent.com/102834897/189881883-aabe3109-5393-45d0-a508-277690164937.png)
 ![PersonelOgrenciListesi](https://user-images.githubusercontent.com/102834897/189881900-eab2281f-74fc-4875-b640-3f745291eac7.png)
@@ -14,6 +16,9 @@ Giriş Ekranı
 ![PersonelDersListesi](https://user-images.githubusercontent.com/102834897/189881987-fe16cc10-cc8d-496e-a9f4-8e83193d8af3.png)
 ![PersonelDersEkle](https://user-images.githubusercontent.com/102834897/189881996-f7a0369e-8ce8-47ec-9989-658939cb5360.png)
 ![PersonelGrafikler](https://user-images.githubusercontent.com/102834897/189882033-c598040f-78aa-45a0-bbb9-2cbc77068cfc.png)
+
+Danışman Ekranı
+
 ![DanışmanDefault](https://user-images.githubusercontent.com/102834897/189882067-f5c4580b-90a4-4219-83fd-b06bf57433a0.png)
 ![DanışmanProfil](https://user-images.githubusercontent.com/102834897/189882077-f407450b-faee-40ba-8805-d9f3750fdd7a.png)
 ![DanışmanOgrenciListesi](https://user-images.githubusercontent.com/102834897/189882250-a66bf2e8-59d5-4ac4-bbec-841a906dfcfe.png)
@@ -21,6 +26,9 @@ Giriş Ekranı
 ![DanışmanNotListesi](https://user-images.githubusercontent.com/102834897/189882747-19682b7c-927e-4dfc-a358-cd2790bf07b3.png)
 ![DanışmanDevamsızlıkEkle](https://user-images.githubusercontent.com/102834897/189882778-eeebea07-ea4c-4d96-bc38-aeea11d8d016.png)
 ![DanışmanGrafikler](https://user-images.githubusercontent.com/102834897/189882837-b39b6701-b7d6-44bb-a89e-a107789727be.png)
+
+Öğrenci Ekranı
+
 ![OgrenciDefault](https://user-images.githubusercontent.com/102834897/189882866-f762cb92-694b-46ac-a5bd-27c1135aa846.png)
 ![OgrenciProfil](https://user-images.githubusercontent.com/102834897/189882881-2c0334e8-3fbf-4601-93f3-a6c0157c3b5c.png)
 ![OgrenciNotListesi](https://user-images.githubusercontent.com/102834897/189882892-2ac61a3c-263f-4c9b-95a5-10eb7a3a0553.png)
