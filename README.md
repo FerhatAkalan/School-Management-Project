@@ -11,6 +11,7 @@
 
 <a name="Giriş-Ekranı"></a>
 ## Giriş Ekranı
+* Sisteme giriş yapan kişinin rolüne göre sayfa yönlendirmesi yapılır.
 
 ![Giriş Ekranı](https://user-images.githubusercontent.com/102834897/188285816-da21d1fc-4a62-4554-a541-896dee08720d.png)
 ---
