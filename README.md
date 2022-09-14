@@ -17,7 +17,7 @@
 
 <a name="Personel-Ekranı"></a>
 ## Personel Ekranı
-
+* **Personel Rolü** sisteme öğrenci, danışman ve ders ekleme, silme, güncelleme yapabilir.
 #### Personel Default Sayfası
 ![PersonelDefault](https://user-images.githubusercontent.com/102834897/189881844-e71008ac-9a1e-43cc-a52e-54a55a49b90e.png)
 ---
@@ -48,7 +48,7 @@
 
 <a name="Danışman-Ekranı"></a>
 ## Danışman Ekranı
-
+* **Danışman Rolü** sistemde kendisine kayıtlı olan öğrencilerin notlarını, devamsızlık bilgilerini ekleme, silme, güncelleme, ders kayıt işlemlerini yapabilir.
 #### Danışman Default Sayfası
 ![DanışmanDefault](https://user-images.githubusercontent.com/102834897/189882067-f5c4580b-90a4-4219-83fd-b06bf57433a0.png)
 ---
@@ -73,6 +73,7 @@
 
 <a name="Öğrenci-Ekranı"></a>
 ## Öğrenci Ekranı
+* **Öğrenci Rolü** sistemde bulunan not bilgisini, ders bilgisini ve devamsızlık bilgisini görüntüleme işlemlerini yapabilir.
 
 #### Öğrenci Default Sayfası
 ![OgrenciDefault](https://user-images.githubusercontent.com/102834897/189882866-f762cb92-694b-46ac-a5bd-27c1135aa846.png)
