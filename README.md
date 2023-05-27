@@ -1,5 +1,5 @@
 # School Management System
-**ASP.NET ile okul otomasyonu projesi.**
+**School management system project with ASP.NET.**
 + Okulların öğretmenlerinin ve öğrencilerinin bilgi işlemlerini yapmalarını sağlar.
 + ASP.NET, Bootstrap ve Microsoft SQL Express kullanılarak yazıldı.
 
